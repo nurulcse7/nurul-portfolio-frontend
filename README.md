@@ -1,3 +1,54 @@
+# Nurul Islam (Portfolio)
+
+#### Live link
+
+`client-side` [Click here]()
+`server-side` [Click here]()
+
+#### Code link
+
+`client-side` [Click here](https://github.com/nurulcse7/nurul-portfolio-frontend)
+`server-side` [Click here]()
+
+### Description
+
+- This project start with npx create-react-app (ReactJS)
+- Implement UI as per requirement with Tailwind CSS and daisyUI.
+- Also using React DOM, "react-hook-form", "react-hot-toast", "react-icons", "react-router-dom", "typewriter-effect, etc.
+- Implement email/password-based and google login for authentication with firebase.
+- Every section completed after code push on GitHub
+- Client-side deploy with firebase
+---
+
+### Technology
+
+#### Front-end
+
+- Tailwind CSS
+- daisyUI
+- JavaScript
+- TypewriterJS (npm i typewriter-effect)
+- React.js
+- React Router Dom (npm install react-router-dom)
+- React Firebase Hooks (npm install --save react-firebase-hooks)
+- React Hook Form (npm install react-hook-form)
+- React-hot-toast (npm install react-hot-toast)
+- React Icons (npm install react-icons --save)
+
+
+#### Back-end
+
+- Node.JS
+- Express.JS
+- Middleware with Cors, React Query
+- dotenv
+- MongoDB (Atlas, Cluster)
+- Deploy in Vercel (Back-end)
+
+---
+
+
+<!-- 
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,3 +119,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+ -->
