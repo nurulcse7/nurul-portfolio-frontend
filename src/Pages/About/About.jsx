@@ -4,9 +4,11 @@ import ME from '../../assets/profile-pic1.jpg'
 import { FaAward } from 'react-icons/fa'
 import { FiUsers } from 'react-icons/fi'
 import { VscFolderLibrary } from 'react-icons/vsc'
+import useTitle from '../../hooks/useTitle';
 
 
 const About = () => {
+    useTitle('About');
     return (
         <section id='about'>
             <h3 className='sub-title'>Get to Know</h3>

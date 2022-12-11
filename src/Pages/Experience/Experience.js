@@ -28,8 +28,11 @@ import { TbApi } from 'react-icons/tb';
 // import { GrMysql } from 'react-icons/gr'
 import { SiMaterialui } from 'react-icons/si';
 import { TbLetterA } from 'react-icons/tb';
+import useTitle from '../../hooks/useTitle';
 
 const Experience = () => {
+  useTitle('Experience');
+
   return (
     <section id='experience'>
       <h3 className='sub-title'>What Skills do I have</h3>

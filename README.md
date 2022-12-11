@@ -2,7 +2,7 @@
 
 #### Live link
 
-`client-side` [Click here]()
+`client-side` [Click here](https://nurul-com.web.app/)
 `server-side` [Click here]()
 
 #### Code link
@@ -34,7 +34,9 @@
 - React Hook Form (npm install react-hook-form)
 - React-hot-toast (npm install react-hot-toast)
 - React Icons (npm install react-icons --save)
-
+- Swiper (The Most Modern Mobile Touch Slider) (npm i swiper) 
+- EmailJS (Email Services) npm install @emailjs/browser --save 
+- Firebase (Deploy)
 
 #### Back-end
 

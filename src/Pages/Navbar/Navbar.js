@@ -35,7 +35,7 @@ const Navbar = () => {
       <li> <Link to='/'>Home</Link></li>
       <li> <Link to='/portfolio'>Portfolio</Link></li>
       <li> <Link to='/experience'>Experience</Link></li>
-      <li> <Link to='/service'>Services</Link></li>
+      <li> <Link to='/services'>Services</Link></li>
       <li> <Link to='/blog'>Blog</Link> </li>
       <li tabIndex={0}>
         <Link to='' className='justify-between'>
@@ -53,7 +53,7 @@ const Navbar = () => {
         <ul className='p-2  bg-gray-200 dark:bg-base-200'>
           <li><Link to='/contact'>Contact Me</Link></li>
           <li><Link to='/about'>About Me</Link></li>
-          <li><Link to='/privacy'>Privacy & Policy</Link></li>
+          <li><Link to='/terms'>Terms & Conditions</Link></li>
         </ul>
       </li>
       <>
@@ -100,7 +100,7 @@ const Navbar = () => {
         <div className='dropdown'>
           <label
             tabIndex={0}
-            className='btn btn-secondary lg:hidden ml-12 mt-2 capitalize'
+            className='btn btn-ghost lg:hidden ml-12 mt-2 capitalize'
             data-tip='Navbar'
           >
             <svg
@@ -125,7 +125,7 @@ const Navbar = () => {
             {menuItems}
           </ul>
         </div>
-        <Link to='/' className='text-4xl font-bold' >Nurul Islam </Link>
+        <Link to='/' className='ml-2 text-4xl font-bold' >Nurul Islam </Link>
       </div>
       <div className='navbar-center hidden lg:flex ml-12'>
         <ul className='menu menu-horizontal p-0 text-lg font-bold bg-gray-200 dark:bg-base-100'>

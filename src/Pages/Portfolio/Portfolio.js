@@ -6,6 +6,7 @@ import IMG3 from '../../assets/portfolio3.png'
 import IMG4 from '../../assets/portfolio4.jpg'
 import IMG5 from '../../assets/portfolio5.jpg'
 import IMG6 from '../../assets/portfolio6.jpg'
+import useTitle from '../../hooks/useTitle';
 
 const data = [
     {
@@ -53,6 +54,8 @@ const data = [
 ]
 
 const Portfolio = () => {
+    useTitle('Portfolio');
+
     return (
         <section id='portfolio'>
             <h3 className='sub-title'>My Recent Work</h3>

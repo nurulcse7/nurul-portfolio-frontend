@@ -18,7 +18,7 @@ export default function ErrorPage() {
             {error.statusText || error.message}
           </i>
           <br />
-          <button className='btn btn-primary mt-5 capitalize text-lg'>
+          <button className='btn btn-ghost mt-5 capitalize text-lg'>
             <Link to='/'>Back To Home</Link>
           </button>
         </div>

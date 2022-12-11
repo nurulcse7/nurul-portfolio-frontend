@@ -9,12 +9,15 @@ import Experience from '../../Pages/Experience/Experience';
 import Home from '../../Pages/Home/Home';
 import Portfolio from '../../Pages/Portfolio/Portfolio';
 import Services from '../../Pages/Services/Services';
+import ErrorPage from '../../Pages/Shared/error-page';
+import Terms from '../../Pages/Terms/Terms';
 import Testimonials from '../../Pages/Testimonials/Testimonials';
 
 export const router = createBrowserRouter([
   {
     path: '/',
     element: <Main></Main>,
+    errorElement: <ErrorPage></ErrorPage>,
     children: [
       {
         path: '/',
@@ -47,6 +50,10 @@ export const router = createBrowserRouter([
       {
         path: '/blog',
         element: <Blog></Blog>
+      },
+      {
+        path: '/terms',
+        element: <Terms></Terms>
       },
       {
         path: '/signin',

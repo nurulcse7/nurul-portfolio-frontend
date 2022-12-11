@@ -1,8 +1,10 @@
 import React from 'react';
 import './Services.css'
 import { BsCheckLg } from 'react-icons/bs'
+import useTitle from '../../hooks/useTitle';
 
 const Services = () => {
+    useTitle('Services');
     return (
         <section id='services'>
             <h3 className='sub-title'>What I Offer</h3>
