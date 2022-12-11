@@ -34,6 +34,8 @@ const Navbar = () => {
     <React.Fragment>
       <li> <Link to='/'>Home</Link></li>
       <li> <Link to='/portfolio'>Portfolio</Link></li>
+      <li> <Link to='/experience'>Experience</Link></li>
+      <li> <Link to='/service'>Services</Link></li>
       <li> <Link to='/blog'>Blog</Link> </li>
       <li tabIndex={0}>
         <Link to='' className='justify-between'>

@@ -12,7 +12,7 @@ const Header = () => {
             <Typewriter
             options={{
               strings: [
-                `<h3>Hello I'm</h3>
+                `<h2>Hello I'm</h2>
                 <h1>Nurul Islam</h1>
                 <h2 className="text-light">Full Stack Web Developer</h2>`
               ],
