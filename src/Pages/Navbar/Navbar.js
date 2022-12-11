@@ -32,36 +32,9 @@ const Navbar = () => {
 
   const menuItems = (
     <React.Fragment>
-      <li>
-        <Link to='/'>Home</Link>
-      </li>
-      
-      <li tabIndex={0}>
-        <Link to='/categories' className='justify-between'>
-          Categories
-          <svg
-            className='fill-current'
-            xmlns='http://www.w3.org/2000/svg'
-            width='24'
-            height='24'
-            viewBox='0 0 24 24'
-          >
-            <path d='M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z' />
-          </svg>
-        </Link>
-        <ul className='p-2  bg-gray-200 dark:bg-base-200'>
-          
-          <li>
-            <Link to='/bmw'>BMW</Link>
-          </li>
-          <li>
-            <Link to='/mercedes'>Mercedes</Link>
-          </li>
-          <li>
-            <Link to='/toyota'>Toyota</Link>
-          </li>
-        </ul>
-      </li>
+      <li> <Link to='/'>Home</Link></li>
+      <li> <Link to='/portfolio'>Portfolio</Link></li>
+      <li> <Link to='/blog'>Blog</Link> </li>
       <li tabIndex={0}>
         <Link to='' className='justify-between'>
           Contact
@@ -76,57 +49,34 @@ const Navbar = () => {
           </svg>
         </Link>
         <ul className='p-2  bg-gray-200 dark:bg-base-200'>
-          <li>
-            <Link to='/portfolio'>Portfolio</Link>
-          </li>
-          <li>
-            <Link to='/contact'>Contact Us</Link>
-          </li>
-          <li>
-            <Link to='/about'>About Us</Link>
-          </li>
-          <li>
-            <Link to='/privacy'>Privacy & Policy</Link>
-          </li>
-          <li>
-            <Link to='/blog'>Blog</Link>
-          </li>
+          <li><Link to='/contact'>Contact Me</Link></li>
+          <li><Link to='/about'>About Me</Link></li>
+          <li><Link to='/privacy'>Privacy & Policy</Link></li>
         </ul>
       </li>
-      
-      
-
-
-        <>
-          
-          <li>
-            <button >Sign out</button>
-          </li>
-        </>
-      
-        <li tabIndex={0}>
-          <Link to='/login' className='justify-between'>
-            Login
-            <svg
-              className='fill-current'
-              xmlns='http://www.w3.org/2000/svg'
-              width='24'
-              height='24'
-              viewBox='0 0 24 24'
-            >
-              <path d='M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z' />
-            </svg>
-          </Link>
-          <ul className='p-2  bg-gray-200 dark:bg-base-200'>
-            <li>
-              <Link to='/login'>SignIn</Link>
-            </li>
-            <li>
-              <Link to='/signup'>SignUp</Link>
-            </li>
-            
-          </ul>
+      <>
+        <li>
+          <button>Sign out</button>
         </li>
+      </>
+      <li tabIndex={0}>
+        <Link to='/login' className='justify-between'>
+          Login
+          <svg
+            className='fill-current'
+            xmlns='http://www.w3.org/2000/svg'
+            width='24'
+            height='24'
+            viewBox='0 0 24 24'
+          >
+            <path d='M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z' />
+          </svg>
+        </Link>
+        <ul className='p-2  bg-gray-200 dark:bg-base-200'>
+          <li><Link to='/login'>SignIn</Link> </li>
+          <li><Link to='/signup'>SignUp</Link></li>
+        </ul>
+      </li>
       )
       <li>
         <button onClick={handleThemeSwitch}>
@@ -148,7 +98,7 @@ const Navbar = () => {
         <div className='dropdown'>
           <label
             tabIndex={0}
-            className='btn btn-secondary lg:hidden ml-12 mt-2 tooltip tooltip-top tooltip-open capitalize'
+            className='btn btn-secondary lg:hidden ml-12 mt-2 capitalize'
             data-tip='Navbar'
           >
             <svg
@@ -173,15 +123,13 @@ const Navbar = () => {
             {menuItems}
           </ul>
         </div>
-        <Link to='/'>Nurul Islam</Link>
-        </div>
-        <div className='navbar-center hidden lg:flex ml-12'>
-          <ul className='menu menu-horizontal p-0 text-lg font-bold bg-gray-200 dark:bg-base-100'>
-            {menuItems}
-          </ul>
-        </div>
-        
-      
+        <Link to='/' className='text-4xl font-bold' >Nurul Islam </Link>
+      </div>
+      <div className='navbar-center hidden lg:flex ml-12'>
+        <ul className='menu menu-horizontal p-0 text-lg font-bold bg-gray-200 dark:bg-base-100'>
+          {menuItems}
+        </ul>
+      </div>
     </div>
   );
 };
