@@ -21,7 +21,7 @@
   --color-primary: #4db5ff; 
   --color-primary-variant: rgba(77, 255, 255, 0.6);*/
   --color-bg: #343486;
-  --color-bg-variant:#1f1f38;
+  --color-bg-variant: #1f1f38;
   --color-primary: #0de560;
   --color-primary-variant: #1f1f38;
   --color-white: #fff;
@@ -32,7 +32,6 @@
   --container-width-lg: 75%;
   --container-width-md: 86%;
   --container-width-sm: 90%;
-
 }
 
 html {
@@ -48,7 +47,7 @@ body {
   /* background: var(--color-bg); */
   color: var(--color-white);
   line-height: 1.7;
-  background-image: url(../src/assets/bg-texture.png);
+  /* background-image: url(../src/assets/bg-texture.png); */
 }
 
 /*=============General Styles================*/
@@ -66,21 +65,21 @@ h5 {
   font-weight: 500;
 }
 
-h1{
+h1 {
   font-size: 2.5rem;
 }
 
 section {
-  margin-top: 8rem;
+  margin-top: 2rem;
 }
 
-section > h1, 
-section > h3{
+section > h1,
+section > h3 {
   text-align: center;
   /* color: var(--color-light); */
 }
 
-.sub-title{
+.sub-title {
   padding-top: 3rem;
 }
 
@@ -95,14 +94,14 @@ section > h1 {
 
 a {
   color: var(--color-primary);
-  transition: var(--transition) ;
+  transition: var(--transition);
 }
 
-a:hover{
+a:hover {
   color: var(--color-white);
 }
 
-.btn{
+.btn {
   width: max-content;
   display: inline-block;
   color: var(--color-primary);
@@ -113,7 +112,7 @@ a:hover{
   transition: var(--transition);
 }
 
-.btn:hover{
+.btn:hover {
   background: var(--color-white);
   color: var(--color-bg);
   border-color: transparent;
@@ -132,22 +131,22 @@ img {
 
 /* ============Media Queries (md devices) ===========*/
 @media screen and (max-width: 1024px) {
-  .container{
+  .container {
     width: var(--container-width-md);
   }
 
-  section{
+  section {
     margin-top: 6rem;
   }
 }
 
 /* ============Media Queries (sm devices) ===========*/
 @media screen and (max-width: 600px) {
-  .container{
+  .container {
     width: var(--container-width-sm);
   }
 
-  section > h2{
+  section > h2 {
     margin-bottom: 2rem;
   }
 }

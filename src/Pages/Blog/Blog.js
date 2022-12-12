@@ -5,7 +5,7 @@ import './Blog.css'
 const Blog = () => {
   useTitle('Blog');
   return (
-    <div>
+    <div className='md:my-80'>
       <h1 className='text-center text-3xl mt-24'>
         Welcome to Blog Page!!!
       </h1>

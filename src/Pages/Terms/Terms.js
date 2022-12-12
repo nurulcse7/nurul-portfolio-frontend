@@ -5,7 +5,7 @@ const Terms = () => {
   useTitle('Terms');
 
   return (
-    <div>
+    <div className='md:my-80'>
       <h1 className='text-center text-3xl mt-24'>
         Welcome to Terms and Conditions Page!!!
       </h1>

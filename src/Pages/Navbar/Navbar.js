@@ -1,134 +1,50 @@
-import React, { useContext, useEffect, useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
-// import { AuthContext } from '../../../contexts/AuthProvider';
 
 const Navbar = () => {
-  // theme start here
-  const [theme, setTheme] = useState(null);
-  useEffect(() => {
-    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-      setTheme('dark');
-    } else {
-      setTheme('light');
-    }
-  }, []);
-  useEffect(() => {
-    if (theme === 'dark') {
-      document.documentElement.classList.add('dark');
-    } else {
-      document.documentElement.classList.remove('dark');
-    }
-  }, [theme]);
-  const handleThemeSwitch = () => {
-    setTheme(theme === 'dark' ? 'light' : 'dark');
-  }; // theme stop here
-
-  // const { user, logOut } = useContext(AuthContext);
-  // const handleLogOut = () => {
-  //   logOut()
-  //     .then(() => {})
-  //     .catch((err) => console.log(err));
-  // };
-
   const menuItems = (
     <React.Fragment>
       <li> <Link to='/'>Home</Link></li>
       <li> <Link to='/portfolio'>Portfolio</Link></li>
       <li> <Link to='/experience'>Experience</Link></li>
       <li> <Link to='/services'>Services</Link></li>
-      <li> <Link to='/blog'>Blog</Link> </li>
+      <li><Link to='/about'>About Me</Link></li>
       <li tabIndex={0}>
-        <Link to='' className='justify-between'>
+        <Link to='/contact' className='justify-between'>
           Contact
-          <svg
-            className='fill-current'
-            xmlns='http://www.w3.org/2000/svg'
-            width='24'
-            height='24'
-            viewBox='0 0 24 24'
-          >
+          <svg className='fill-current' xmlns='http://www.w3.org/2000/svg' width='22' height='22' viewBox='0 0 24 24'>
             <path d='M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z' />
           </svg>
         </Link>
-        <ul className='p-2  bg-gray-200 dark:bg-base-200'>
-          <li><Link to='/contact'>Contact Me</Link></li>
-          <li><Link to='/about'>About Me</Link></li>
+        <ul className='p-4 shadow bg-gray-700 dark:bg-base-200 rounded-box w-52 gap-1'>
+          <li><Link to='/contact'>Contact Me</Link></li>   
           <li><Link to='/terms'>Terms & Conditions</Link></li>
         </ul>
       </li>
-      <>
-        <li>
-          <button>Sign out</button>
-        </li>
-      </>
-      <li tabIndex={0}>
-        <Link to='/login' className='justify-between'>
-          Login
-          <svg
-            className='fill-current'
-            xmlns='http://www.w3.org/2000/svg'
-            width='24'
-            height='24'
-            viewBox='0 0 24 24'
-          >
-            <path d='M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z' />
-          </svg>
-        </Link>
-        <ul className='p-2  bg-gray-200 dark:bg-base-200'>
-          <li><Link to='/login'>SignIn</Link> </li>
-          <li><Link to='/signup'>SignUp</Link></li>
-        </ul>
-      </li>
-      )
-      <li>
-        <button onClick={handleThemeSwitch}>
-          <input
-            type='checkbox'
-            className='toggle toggle-primary tooltip tooltip-left '
-            data-tip='Light/Dark Mode'
-            defaultChecked
-            title='Themes Toggle'
-          />
-        </button>
-      </li>
+      <li> <Link to='/blog'>Blog</Link> </li>
     </React.Fragment>
   );
 
   return (
-    <div className='navbar flex justify-between md:sticky top-0 z-50'>
+    <div className='navbar flex justify-between'>
       <div className='navbar-start'>
         <div className='dropdown'>
-          <label
-            tabIndex={0}
-            className='btn btn-ghost lg:hidden ml-12 mt-2 capitalize'
-            data-tip='Navbar'
-          >
-            <svg
-              xmlns='http://www.w3.org/2000/svg'
-              className='h-8 w-8'
-              fill='none'
-              viewBox='0 0 24 24'
-              stroke='currentColor'
-            >
-              <path
-                strokeLinecap='round'
-                strokeLinejoin='round'
-                strokeWidth='4'
-                d='M4 6h16M4 12h8m-8 6h16'
-              />
+          <label tabIndex={0} className='btn btn-ghost lg:hidden mt-2 capitalize'>
+            <svg xmlns='http://www.w3.org/2000/svg' className='h-6 w-6' fill='none' viewBox='0 0 22 22' stroke='currentColor'>
+              <path strokeLinecap='round' strokeLinejoin='round' strokeWidth='4' d='M4 6h16M4 12h8m-8 6h16'/>
             </svg>
           </label>
           <ul
             tabIndex={1}
-            className='menu menu-compact dropdown-content  p-4 shadow bg-gray-200 dark:bg-base-200 rounded-box w-52 gap-1'
+            className='menu menu-compact dropdown-content p-4 shadow bg-gray-700 dark:bg-base-200 rounded-box w-52 gap-1'
           >
             {menuItems}
           </ul>
         </div>
-        <Link to='/' className='ml-2 text-4xl font-bold' >Nurul Islam </Link>
+        <Link to='/' className='ml-3 text-2xl font-bold block' >Nurul Islam</Link>
       </div>
-      <div className='navbar-center hidden lg:flex ml-12'>
-        <ul className='menu menu-horizontal p-0 text-lg font-bold bg-gray-200 dark:bg-base-100'>
+      <div className='navbar-center hidden lg:flex'>
+        <ul className='menu menu-horizontal p-0 text-lg font-bold'>
           {menuItems}
         </ul>
       </div>
@@ -138,5 +54,4 @@ const Navbar = () => {
 
 export default Navbar;
 
-// {user?.uid ? (
-// onClick={handleLogOut}
+// md:sticky top-0 z-50
