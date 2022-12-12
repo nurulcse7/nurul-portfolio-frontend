@@ -7,7 +7,12 @@ import Blog from '../../Pages/Blog/Blog';
 import Contact from '../../Pages/Contact/Contact';
 import Experience from '../../Pages/Experience/Experience';
 import Home from '../../Pages/Home/Home';
+import Educational from '../../Pages/Portfolio/Educational/Educational';
+import Gpt from '../../Pages/Portfolio/GPT-3/Gpt';
+import Gym from '../../Pages/Portfolio/Gym/Gym';
+import Oop from '../../Pages/Portfolio/Oop/Oop';
 import Portfolio from '../../Pages/Portfolio/Portfolio';
+import Recipes from '../../Pages/Portfolio/Recipes/Recipes';
 import Services from '../../Pages/Services/Services';
 import ErrorPage from '../../Pages/Shared/error-page';
 import Terms from '../../Pages/Terms/Terms';
@@ -21,47 +26,67 @@ export const router = createBrowserRouter([
     children: [
       {
         path: '/',
-        element: <Home></Home>
+        element: <Home></Home>,
       },
       {
         path: '/about',
-        element: <About></About>
-      },
-      {
-        path: '/experience',
-        element: <Experience></Experience>
-      },
-      {
-        path: '/services',
-        element: <Services></Services>
+        element: <About></About>,
       },
       {
         path: '/portfolio',
-        element: <Portfolio></Portfolio>
+        element: <Portfolio></Portfolio>,
+      },
+      {
+        path: '/recipe',
+        element: <Recipes></Recipes>,
+      },
+      {
+        path: '/education',
+        element: <Educational></Educational>,
+      },
+      {
+        path: '/gpt',
+        element: <Gpt></Gpt>,
+      },
+      {
+        path: '/gym',
+        element: <Gym></Gym>
+      },
+      {
+        path: '/oop',
+        element: <Oop></Oop>
+      },
+      {
+        path: '/experience',
+        element: <Experience></Experience>,
+      },
+      {
+        path: '/services',
+        element: <Services></Services>,
       },
       {
         path: '/testimonial',
-        element: <Testimonials></Testimonials>
+        element: <Testimonials></Testimonials>,
       },
       {
         path: '/contact',
-        element: <Contact></Contact>
+        element: <Contact></Contact>,
       },
       {
         path: '/blog',
-        element: <Blog></Blog>
+        element: <Blog></Blog>,
       },
       {
         path: '/terms',
-        element: <Terms></Terms>
+        element: <Terms></Terms>,
       },
       {
         path: '/signin',
-        element: <SignIn></SignIn>
+        element: <SignIn></SignIn>,
       },
       {
         path: '/signup',
-        element: <SignUp></SignUp>
+        element: <SignUp></SignUp>,
       },
     ],
   },

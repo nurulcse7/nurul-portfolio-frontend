@@ -95,7 +95,7 @@ const Navbar = () => {
   );
 
   return (
-    <div className='navbar flex justify-between sticky top-0 z-50'>
+    <div className='navbar flex justify-between md:sticky top-0 z-50'>
       <div className='navbar-start'>
         <div className='dropdown'>
           <label
