@@ -41,7 +41,7 @@ const Navbar = () => {
             {menuItems}
           </ul>
         </div>
-        <Link to='/' className='ml-3 text-2xl font-bold block' >Nurul Islam</Link>
+        <Link to='/' className='ml-3 text-3xl font-bold block' >Nurul Islam</Link>
       </div>
       <div className='navbar-center hidden lg:flex'>
         <ul className='menu menu-horizontal p-0 text-lg font-bold'>
