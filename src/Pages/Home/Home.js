@@ -1,6 +1,5 @@
 import React from 'react'
 import Header from '../../components/Header/Header'
-import Nav from '../../components/Nav/Nav'
 import useTitle from '../../hooks/useTitle'
 import About from '../About/About'
 import Contact from '../Contact/Contact'
@@ -16,7 +15,7 @@ const Home = () => {
     <div>
     <Header></Header>
     <div className='divider mb-12 mt-8 bg-gray-700 h-1/6 dark:opacity-20 dark:bg-gray-500'></div>
-    <Nav></Nav>
+    
     <About></About>
     <div className='divider mb-12 mt-8 bg-gray-700 h-1/6 dark:opacity-20 dark:bg-gray-500'></div>
     <Portfolio></Portfolio>

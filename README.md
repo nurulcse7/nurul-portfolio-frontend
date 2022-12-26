@@ -27,7 +27,7 @@
 - Tailwind CSS
 - daisyUI
 - JavaScript
-- TypewriterJS (npm i typewriter-effect)
+
 - React.js
 - React Router Dom (npm install react-router-dom)
 - React Firebase Hooks (npm install --save react-firebase-hooks)

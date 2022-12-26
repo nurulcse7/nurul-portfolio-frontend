@@ -12,7 +12,7 @@ import Gpt from '../../Pages/Portfolio/GPT-3/Gpt';
 import Gym from '../../Pages/Portfolio/Gym/Gym';
 import Oop from '../../Pages/Portfolio/Oop/Oop';
 import Portfolio from '../../Pages/Portfolio/Portfolio';
-import Recipes from '../../Pages/Portfolio/Recipes/Recipes';
+import Resale from '../../Pages/Portfolio/Resale/Resale';
 import Services from '../../Pages/Services/Services';
 import ErrorPage from '../../Pages/Shared/error-page';
 import Terms from '../../Pages/Terms/Terms';
@@ -37,8 +37,8 @@ export const router = createBrowserRouter([
         element: <Portfolio></Portfolio>,
       },
       {
-        path: '/recipe',
-        element: <Recipes></Recipes>,
+        path: '/resale',
+        element: <Resale/>,
       },
       {
         path: '/education',

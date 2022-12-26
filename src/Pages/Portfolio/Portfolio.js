@@ -1,26 +1,42 @@
 import React from 'react';
 import './Portfolio.css';
-import IMG1 from '../../assets/portfolio1.png';
-import IMG2 from '../../assets/portfolio2.png';
-import IMG3 from '../../assets/portfolio3.png';
-import IMG4 from '../../assets/portfolio4.jpg';
-import IMG5 from '../../assets/portfolio5.jpg';
-import IMG6 from '../../assets/portfolio6.jpg';
-import useTitle from '../../hooks/useTitle';
+import IMG1 from '../../assets/portfolio1.jpg';
+import IMG2 from '../../assets/portfolio1.jpg';
+import IMG3 from '../../assets/portfolio1.jpg';
+import IMG4 from '../../assets/portfolio2.png';
 import { Link } from 'react-router-dom';
+import useTitle from '../../hooks/useTitle';
 
 const data = [
   {
     id: 1,
     image: IMG1,
-    title: 'Simply Recipes',
-    frontend: 'https://github.com/nurulcse7/html-css-simply-recipes-clone',
-    backend: 'https://github.com/nurulcse7/html-css-simply-recipes-clone',
-    demo: 'https://simply-recipes-html-css-only.netlify.app/',
-    details: '/recipe',
+    title: 'Resale Furniture',
+    frontend: 'https://github.com/nurulcse7/resale-furniture-frontend',
+    backend: 'https://github.com/nurulcse7/resale-furniture-server',
+    demo: 'https://resale-furniture-bd-com.web.app',
+    details: '/resale',
   },
   {
     id: 2,
+    image: IMG1,
+    title: 'Dental Care',
+    frontend: '',
+    backend: '',
+    demo: '',
+    details: '/dental',
+  },
+  {
+    id: 3,
+    image: IMG1,
+    title: 'Motor Mechanic',
+    frontend: '',
+    backend: '',
+    demo: '',
+    details: '/motor',
+  },
+  {
+    id: 4,
     image: IMG2,
     title: 'Educational Website',
     frontend: 'https://github.com/nurulcse7/educational-website-clone/',
@@ -29,7 +45,7 @@ const data = [
     details: '/education',
   },
   {
-    id: 3,
+    id: 5,
     image: IMG3,
     title: 'GPT-3 OpenAI',
     frontend: 'https://github.com/nurulcse7/gpt3_jsm-clone/',
@@ -38,7 +54,7 @@ const data = [
     details: '/gpt',
   },
   {
-    id: 4,
+    id: 6,
     image: IMG4,
     title: 'Gym Exercises',
     frontend: 'https://github.com/nurulcse7/gym_exercises-clone',
@@ -46,24 +62,7 @@ const data = [
     demo: 'https://gymexercises01.netlify.app/',
     details: '/gym',
   },
-  {
-    id: 5,
-    image: IMG5,
-    title: 'Creative Coding - OOP',
-    frontend: 'https://github.com/nurulcse7/creative-coding-oop ',
-    backend: 'https://github.com/nurulcse7/creative-coding-oop ',
-    demo: 'https://nurulcse7.github.io/creative-coding-oop/',
-    details: '/oop',
-  },
-  {
-    id: 6,
-    image: IMG6,
-    title: 'Stopwatch',
-    frontend: 'https://github.com/nurulcse7/stopwatch',
-    backend: 'https://github.com/nurulcse7/stopwatch',
-    demo: 'https://nurulcse7.github.io/stopwatch/ ',
-    details: '',
-  },
+  
 ];
 
 const Portfolio = () => {
