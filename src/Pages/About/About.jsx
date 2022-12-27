@@ -5,6 +5,7 @@ import { FaAward } from 'react-icons/fa'
 import { FiUsers } from 'react-icons/fi'
 import { VscFolderLibrary } from 'react-icons/vsc'
 import useTitle from '../../hooks/useTitle';
+import { Link } from 'react-router-dom';
 
 
 const About = () => {
@@ -23,24 +24,25 @@ const About = () => {
                     <div className="about_cards">
 
                         <article className='about_card'>
+                            <Link to='/experience'>
                             <FaAward className='about_icon' />
                             <h4>Experience</h4>
                             <small>2+ Years Working</small>
-
+                            </Link>
                         </article>
 
                         <article className='about_card'>
                             <FiUsers className='about_icon' />
                             <h4>Clients</h4>
                             <small>20+ Worldwide</small>
-
                         </article>
 
                         <article className='about_card'>
+                            <Link to='/portfolio'>
                             <VscFolderLibrary className='about_icon' />
                             <h4>Projects</h4>
                             <small>50+ Completed</small>
-
+                            </Link>
                         </article>
                     </div>
                     <p>

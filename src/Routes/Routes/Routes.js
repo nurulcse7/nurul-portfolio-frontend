@@ -7,9 +7,11 @@ import Blog from '../../Pages/Blog/Blog';
 import Contact from '../../Pages/Contact/Contact';
 import Experience from '../../Pages/Experience/Experience';
 import Home from '../../Pages/Home/Home';
+import Dental from '../../Pages/Portfolio/Dental/Dental';
 import Educational from '../../Pages/Portfolio/Educational/Educational';
 import Gpt from '../../Pages/Portfolio/GPT-3/Gpt';
 import Gym from '../../Pages/Portfolio/Gym/Gym';
+import Motor from '../../Pages/Portfolio/Motor/Motor';
 import Oop from '../../Pages/Portfolio/Oop/Oop';
 import Portfolio from '../../Pages/Portfolio/Portfolio';
 import Resale from '../../Pages/Portfolio/Resale/Resale';
@@ -39,6 +41,14 @@ export const router = createBrowserRouter([
       {
         path: '/resale',
         element: <Resale/>,
+      },
+      {
+        path: '/dental',
+        element: <Dental/>,
+      },
+      {
+        path: '/motor',
+        element: <Motor/>,
       },
       {
         path: '/education',

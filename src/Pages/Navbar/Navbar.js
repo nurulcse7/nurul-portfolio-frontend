@@ -1,32 +1,32 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 const Navbar = () => {
   const menuItems = (
     <React.Fragment>
-      <li> <Link to='/'>Home</Link></li>
-      <li> <Link to='/portfolio'>Portfolio</Link></li>
-      <li> <Link to='/experience'>Experience</Link></li>
-      <li> <Link to='/services'>Services</Link></li>
-      <li><Link to='/about'>About Me</Link></li>
+      <li> <NavLink to='/' >Home</NavLink></li>
+      <li> <NavLink to='/portfolio'>Portfolio</NavLink></li>
+      <li> <NavLink to='/experience'>Experience</NavLink></li>
+      <li> <NavLink to='/services'>Services</NavLink></li>
+      <li><NavLink to='/about'>About Me</NavLink></li>
       <li tabIndex={0}>
-        <Link to='/contact' className='justify-between'>
+        <NavLink to='/contact' className='justify-between'>
           Contact
           <svg className='fill-current' xmlns='http://www.w3.org/2000/svg' width='22' height='22' viewBox='0 0 24 24'>
             <path d='M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z' />
           </svg>
-        </Link>
+        </NavLink>
         <ul className='p-4 shadow bg-gray-700 dark:bg-base-200 rounded-box w-52 gap-1'>
-          <li><Link to='/contact'>Contact Me</Link></li>   
-          <li><Link to='/terms'>Terms & Conditions</Link></li>
+          <li><NavLink to='/contact'>Contact Me</NavLink></li>   
+          <li><NavLink to='/terms'>Terms & Conditions</NavLink></li>
         </ul>
       </li>
-      <li> <Link to='/blog'>Blog</Link> </li>
+      <li> <NavLink to='/blog'>Blog</NavLink> </li>
     </React.Fragment>
   );
 
   return (
-    <div className='navbar flex justify-between'>
+    <div className='navbar flex justify-between sticky bg-base-200 top-0 z-50'>
       <div className='navbar-start'>
         <div className='dropdown'>
           <label tabIndex={0} className='btn btn-ghost lg:hidden mt-2 capitalize'>

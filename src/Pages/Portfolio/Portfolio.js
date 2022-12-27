@@ -1,9 +1,11 @@
 import React from 'react';
 import './Portfolio.css';
-import IMG1 from '../../assets/portfolio1.jpg';
-import IMG2 from '../../assets/portfolio1.jpg';
-import IMG3 from '../../assets/portfolio1.jpg';
-import IMG4 from '../../assets/portfolio2.png';
+import IMG1 from '../../assets/portfolio/portfolio1.jpg';
+import IMG2 from '../../assets/portfolio/portfolio2.jpg';
+import IMG3 from '../../assets/portfolio/portfolio3.jpg';
+import IMG4 from '../../assets/portfolio/portfolio4.png';
+import IMG5 from '../../assets/portfolio/portfolio5.jpg';
+import IMG6 from '../../assets/portfolio/portfolio6.jpg';
 import { Link } from 'react-router-dom';
 import useTitle from '../../hooks/useTitle';
 
@@ -19,25 +21,25 @@ const data = [
   },
   {
     id: 2,
-    image: IMG1,
+    image: IMG2,
     title: 'Dental Care',
-    frontend: '',
-    backend: '',
-    demo: '',
+    frontend: 'https://github.com/nurulcse7/dental-care-client',
+    backend: 'https://github.com/nurulcse7/dental-care-server',
+    demo: 'https://dental-care-com.web.app/',
     details: '/dental',
   },
   {
     id: 3,
-    image: IMG1,
+    image: IMG3,
     title: 'Motor Mechanic',
-    frontend: '',
-    backend: '',
-    demo: '',
+    frontend: 'https://github.com/nurulcse7/motor-mechanic-frontend',
+    backend: 'https://github.com/nurulcse7/motor-mechanic-backend',
+    demo: 'https://motor-mechanic-com.web.app/',
     details: '/motor',
   },
   {
     id: 4,
-    image: IMG2,
+    image: IMG4,
     title: 'Educational Website',
     frontend: 'https://github.com/nurulcse7/educational-website-clone/',
     backend: 'https://github.com/nurulcse7/educational-website-clone/',
@@ -46,7 +48,7 @@ const data = [
   },
   {
     id: 5,
-    image: IMG3,
+    image: IMG5,
     title: 'GPT-3 OpenAI',
     frontend: 'https://github.com/nurulcse7/gpt3_jsm-clone/',
     backend: 'https://github.com/nurulcse7/gpt3_jsm-clone/',
@@ -55,7 +57,7 @@ const data = [
   },
   {
     id: 6,
-    image: IMG4,
+    image: IMG6,
     title: 'Gym Exercises',
     frontend: 'https://github.com/nurulcse7/gym_exercises-clone',
     backend: 'https://github.com/nurulcse7/gym_exercises-clone',

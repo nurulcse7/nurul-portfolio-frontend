@@ -29,12 +29,12 @@ const Footer = () => {
             </ul>
 
             <div className="footer_socials">
+            <Link to="https://github.com/nurulcse7" target="_blank" rel="noopener noreferrer"><BsGithub /></Link>
                 <Link to="https://www.linkedin.com/in/nurulbd75/" target="_blank" rel="noopener noreferrer"><BsLinkedin /></Link>
-                <Link to="https://www.facebook.com/nurul.bd.775" target="_blank" rel="noopener noreferrer"><FaFacebookF /></Link>
-                <Link to="https://www.instagram.com/nurulbd75/" target="_blank" rel="noopener noreferrer"><FiInstagram /></Link>
                 <Link to="https://twitter.com/nurulbd75" target="_blank" rel="noopener noreferrer"><IoLogoTwitter /></Link>
-                <Link to="https://www.reddit.com/user/nurulbd75" target="_blank" rel="noopener noreferrer"><BsReddit /></Link>
-                <Link to="https://github.com/nurulcse7" target="_blank" rel="noopener noreferrer"><BsGithub /></Link>
+                <Link to="https://www.facebook.com/nurul.bd.775" target="_blank" rel="noopener noreferrer"><FaFacebookF /></Link>
+                <Link to="https://www.instagram.com/nurulbd75/" target="_blank" rel="noopener noreferrer"><FiInstagram /></Link>             
+                <Link to="https://www.reddit.com/user/nurulbd75" target="_blank" rel="noopener noreferrer"><BsReddit /></Link>   
             </div>
 
             <div className="footer_copyright">
