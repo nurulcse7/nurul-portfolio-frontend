@@ -3,6 +3,7 @@ import { Outlet } from 'react-router-dom';
 // import Nav from '../components/Nav/Nav';
 import Footer from '../Pages/Footer/Footer';
 import Navbar from '../Pages/Navbar/Navbar';
+import { ScrollToTop } from '../Pages/ScrollToTop/ScrollToTop';
 
 const Main = () => {
   return (
@@ -11,6 +12,7 @@ const Main = () => {
      
       <Outlet></Outlet>
       <Footer></Footer>
+      <ScrollToTop/>
     </div>
   );
 };
