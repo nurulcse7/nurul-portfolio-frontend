@@ -27,12 +27,16 @@ const Resale = () => {
             ✔ In this project implement for Resale Furniture. Here buyers can purchase with various categories, Seller can sell and advertise their products.
           </p>
           <p>✔ Admin can manage, user, buyer, seller, dashboard, and the whole website systems.</p>
+          
+          <p>
+            ✔ The user can't take a buy without login and login form also validation is implemented, such as a full name is required, the password must be 6 characters, need the uppercase (CAPITAL LETTER), need the lowercase (small letter) and a unique character (!@#$&*), etc.
+          </p>
           <p>
             ✔ Everyone can buy and pay with Stripe (payment gateway). Anyone can contact with admin by using the contact form.
           </p>
-          <p>
-            ✔ The user can't take a buy without login and login form also validation is implemented, such as a full name is required, the password must be 6 characters, need the uppercase (CAPITAL) and a unique character (!@#$&*), etc.
-          </p>
+          <p>✔ Also user can report any products/ furniture that are good or bad.</p>
+          <p>✔ Implement CRUD operation</p>
+          <p>✔ Storage data in mongodb database such as categories, furniture, orders, payments, reports, users, etc.</p>
           <p>✔ Deploy frontend in Firebase (Client)</p>
           <p>✔ Deploy backend in Vercel (server)</p>
         </div>

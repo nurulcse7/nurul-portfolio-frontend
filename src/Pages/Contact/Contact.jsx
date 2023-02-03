@@ -17,7 +17,13 @@ const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_36vclrk','template_uib0ack',form.current,'y3HJdYXyeuv1sR5i4' )
+    emailjs
+      .sendForm(
+        'service_36vclrk',
+        'template_uib0ack',
+        form.current,
+        'y3HJdYXyeuv1sR5i4'
+      )
       .then(
         (result) => {
           //     console.log(result.text);
@@ -108,8 +114,8 @@ const Contact = () => {
         <ToastContainer />
       </div>
       <MessengerCustomerChat
-        pageId='<PAGE_ID>'
-        appId='<APP_ID>'
+        pageId='109422248585811'
+        appId='1552485545263244'
         //   htmlRef="<REF_STRING>"
       />
       ,
@@ -118,3 +124,5 @@ const Contact = () => {
 };
 
 export default Contact;
+// 109422248585811
+// 1552485545263244
