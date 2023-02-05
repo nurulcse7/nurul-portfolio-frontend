@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 // import ReactDom from 'react-dom';
-import MessengerCustomerChat from 'react-messenger-customer-chat';
+// import MessengerCustomerChat from 'react-messenger-customer-chat';
 import emailjs from '@emailjs/browser';
 import './Contact.css';
 import { MdOutlineEmail } from 'react-icons/md';
@@ -113,12 +113,6 @@ const Contact = () => {
         </form>
         <ToastContainer />
       </div>
-      <MessengerCustomerChat
-        pageId='109422248585811'
-        appId='1552485545263244'
-        //   htmlRef="<REF_STRING>"
-      />
-      ,
     </section>
   );
 };
@@ -126,3 +120,8 @@ const Contact = () => {
 export default Contact;
 // 109422248585811
 // 1552485545263244
+// <MessengerCustomerChat
+//   pageId='109422248585811'
+//   appId='1552485545263244'
+//   //   htmlRef="<REF_STRING>"
+// />;
