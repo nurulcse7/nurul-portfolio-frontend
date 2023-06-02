@@ -6,6 +6,8 @@ import IMG3 from '../../assets/portfolio/portfolio3.jpg';
 import IMG4 from '../../assets/portfolio/portfolio4.png';
 import IMG5 from '../../assets/portfolio/portfolio5.jpg';
 import IMG6 from '../../assets/portfolio/portfolio6.jpg';
+import IMG7 from '../../assets/wordpress/cbd.jpg';
+import IMG8 from '../../assets/wordpress/infinity.jpg';
 import { Link } from 'react-router-dom';
 import useTitle from '../../hooks/useTitle';
 
@@ -67,6 +69,37 @@ const data = [
   
 ];
 
+// WordPress data 
+const data2 = [
+  {
+    id: 1,
+    image: IMG7,
+    title: 'CBD Product',
+    frontend: '',
+    backend: '',
+    demo: 'http://seban.unaux.com/',
+    details:'http://seban.unaux.com/',
+  },
+  {
+    id: 2,
+    image: IMG8,
+    title: 'Infinity CBD Coffee',
+    frontend: '',
+    backend: '',
+    demo: 'https://infinitycbdcoffee.co/',
+    details: 'https://infinitycbdcoffee.co/',
+  },
+  {
+    id: 3,
+    
+    title: 'Updating will be soon',
+    frontend: '',
+    backend: '',
+    demo: '',
+    details: '',
+  },
+];
+
 const Portfolio = () => {
   useTitle('Portfolio');
 
@@ -93,6 +126,26 @@ const Portfolio = () => {
           );
         })}
       </div>
+
+      <h1 className='wordpress-title'>WordPress Portfolio</h1>
+      <div className='container portfolio_container'>
+        {data2.map(({ id, image, title, frontend, backend, demo, details }) => {
+          return (
+            <article key={id} className='portfolio_item'>
+              <div className='portfolio_item-image'>
+                <img src={image} alt={title} />
+              </div>
+              <h3>{title}</h3>
+              <div className='portfolio_item-cta'>
+                <a href={demo} className='btn capitalize' target='_blank' rel='noopener noreferrer'>Live Demo</a>
+                <Link to={details} className='btn capitalize'>View Detail</Link>
+                
+              </div>
+            </article>
+          );
+        })}
+      </div>
+
     </section>
   );
 };

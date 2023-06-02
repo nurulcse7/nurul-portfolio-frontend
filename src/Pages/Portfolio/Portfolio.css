@@ -35,6 +35,10 @@
   margin-bottom: 0.5rem;
 }
 
+.wordpress-title{
+  margin-top: 3rem;
+}
+
 /* ============Media Queries (md devices) ===========*/
 @media screen and (max-width: 1024px) {
   .portfolio_container {
