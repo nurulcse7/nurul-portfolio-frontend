@@ -30,7 +30,7 @@ const Footer = () => {
 
             <div className="footer_socials">
             <a href="https://github.com/nurulcse7" target="_blank" rel="noopener noreferrer"><BsGithub /></a>
-                <a href="https://www.linkedin.com/in/nurulbd75/" target="_blank" rel="noopener noreferrer"><BsLinkedin  /></a>
+                <a href="https://www.linkedin.com/in/nurulislam411" target="_blank" rel="noopener noreferrer"><BsLinkedin  /></a>
                 <a href="https://twitter.com/nurulbd75" target="_blank" rel="noopener noreferrer"><IoLogoTwitter /></a>
                 <a href="https://www.facebook.com/nurul.bd.775" target="_blank" rel="noopener noreferrer"><FaFacebookF /></a>
                 <a href="https://www.instagram.com/nurulbd75/" target="_blank" rel="noopener noreferrer"><FiInstagram /></a>             

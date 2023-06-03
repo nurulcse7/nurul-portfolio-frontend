@@ -60,7 +60,7 @@ const Contact = () => {
             <h3>Messenger</h3>
             <h4>facebook</h4>
             <a
-              href='https://m.me/nurul.bd.75'
+              href='https://www.facebook.com/nurul.bd.775'
               target='_blank'
               rel='noopener noreferrer'
             >
